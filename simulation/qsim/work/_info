@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/simulation/qsim
+vhard_block
+Z1 !s110 1543893527
+!i10b 1
+!s100 ^l;WS3RbT<3B<l^j=7I6=3
+Ig4MjY[h6Li6XSD9d6A8Om0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1543893524
+Z4 8Thunderbird_Turn_Signal.vo
+Z5 FThunderbird_Turn_Signal.vo
+L0 459
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1543893527.000000
+Z8 !s107 Thunderbird_Turn_Signal.vo|
+Z9 !s90 -work|work|Thunderbird_Turn_Signal.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vThunderbird_Turn_Signal
+R1
+!i10b 1
+!s100 gCeV6_8j48M<Md_B5oF@m3
+I2NKXQT=g`[NzH8Rh9WcY33
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@thunderbird_@turn_@signal
+vThunderbird_Turn_Signal_vlg_vec_tst
+R1
+!i10b 1
+!s100 hXWI;iJP5hZl7BTNjOdel3
+I6oM9]DjaR?fXjQ@Egz7@L0
+R2
+R0
+w1543893523
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@thunderbird_@turn_@signal_vlg_vec_tst

@@ -1,0 +1,72 @@
+|Thunderbird_Turn_Signal
+clk => clk.IN3
+reset => ~NO_FANOUT~
+left_sw => next_la.IN1
+left_sw => next_lb.IN1
+left_sw => next_lc.IN1
+right => ~NO_FANOUT~
+la <= ped_flip_flop:ff_la.Q
+lb <= ped_flip_flop:ff_lb.Q
+lc <= ped_flip_flop:ff_lc.Q
+RA <= <GND>
+RB <= <GND>
+RC <= <GND>
+next_la <= next_la.DB_MAX_OUTPUT_PORT_TYPE
+next_lb <= next_lb.DB_MAX_OUTPUT_PORT_TYPE
+next_lc <= next_lc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_la
+clk => clk.IN1
+D => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_la|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_la|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_lb
+clk => clk.IN1
+D => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_lb|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_lb|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_lc
+clk => clk.IN1
+D => D.IN1
+Q <= gated_d_latch:latch2.Q
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_lc|gated_d_latch:latch1
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Thunderbird_Turn_Signal|ped_flip_flop:ff_lc|gated_d_latch:latch2
+clk => Q$latch.LATCH_ENABLE
+D => Q$latch.DATAIN
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
