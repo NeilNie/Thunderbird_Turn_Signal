@@ -16,15 +16,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "next_la",
+					"name" : "ra",
 					"strict" : false
 				},
 				{
-					"name" : "next_lb",
+					"name" : "rb",
 					"strict" : false
 				},
 				{
-					"name" : "next_lc",
+					"name" : "rc",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				},
 				{
@@ -32,7 +36,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "right_sw",
 					"strict" : false
 				}
 			]

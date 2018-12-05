@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/03/2018 22:18:43"
+// Generated on "12/04/2018 09:31:20"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Thunderbird_Turn_Signal
 // 
@@ -32,24 +32,24 @@ module Thunderbird_Turn_Signal_vlg_vec_tst();
 reg clk;
 reg left_sw;
 reg reset;
-reg right;
+reg right_sw;
 // wires                                               
-wire RA;
-wire RB;
-wire RC;
 wire la;
 wire lb;
 wire lc;
 wire next_la;
 wire next_lb;
 wire next_lc;
+wire next_ra;
+wire next_rb;
+wire next_rc;
+wire ra;
+wire rb;
+wire rc;
 
 // assign statements (if any)                          
 Thunderbird_Turn_Signal i1 (
 // port map - connection between master ports and signals/registers   
-	.RA(RA),
-	.RB(RB),
-	.RC(RC),
 	.clk(clk),
 	.la(la),
 	.lb(lb),
@@ -58,8 +58,14 @@ Thunderbird_Turn_Signal i1 (
 	.next_la(next_la),
 	.next_lb(next_lb),
 	.next_lc(next_lc),
+	.next_ra(next_ra),
+	.next_rb(next_rb),
+	.next_rc(next_rc),
+	.ra(ra),
+	.rb(rb),
+	.rc(rc),
 	.reset(reset),
-	.right(right)
+	.right_sw(right_sw)
 );
 initial 
 begin 
@@ -79,6 +85,13 @@ initial
 begin
 	left_sw = 1'b0;
 	left_sw = #5000 1'b1;
+end 
+
+// right_sw
+initial
+begin
+	right_sw = 1'b0;
+	right_sw = #10000 1'b1;
 end 
 endmodule
 

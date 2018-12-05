@@ -1,0 +1,99 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/simulation/modelsim
+vgated_d_latch
+Z1 !s110 1543980221
+!i10b 1
+!s100 ILT6fg]SU[A==LK3`Y06_2
+I3e=T?G6LGUncZ2DWB1e_;0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1541953834
+8C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/gated_d_latch.v
+FC:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/gated_d_latch.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1543980221.000000
+!s107 C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/gated_d_latch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal|C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/gated_d_latch.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal}
+Z7 tCvgOpt 0
+vped_flip_flop
+R1
+!i10b 1
+!s100 >S^RKAcnj86C8]VFTTC1l1
+IZDnBL[P2A9N:hn4h=XZa83
+R2
+R0
+w1543693231
+8C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/ped_flip_flop.v
+FC:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/ped_flip_flop.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/ped_flip_flop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal|C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/ped_flip_flop.v|
+!i113 1
+R5
+R6
+R7
+vtb
+R1
+!i10b 1
+!s100 VC^PaEEG2Wf<dfOi5O1me3
+I64XoGCCHoMgSX8IhVkHXb1
+R2
+R0
+w1543980105
+8C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/tb.v
+FC:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal|C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/tb.v|
+!i113 1
+R5
+R6
+R7
+vThunderbird_Turn_Signal
+R1
+!i10b 1
+!s100 Pk;S5I@ZCVVE=<D@DJnGZ3
+INmbg^bTEiNO5OK:b7FVB=3
+R2
+R0
+w1543978801
+8C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v
+FC:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal|C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v|
+!i113 1
+R5
+R6
+R7
+n@thunderbird_@turn_@signal

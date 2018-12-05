@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Dec 03 22:17:05 2018
+Analysis & Synthesis Status : Successful - Tue Dec 04 22:22:21 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Thunderbird_Turn_Signal
 Top-level Entity Name : Thunderbird_Turn_Signal
 Family : Cyclone IV E
-Total logic elements : 9
-    Total combinational functions : 9
+Total logic elements : 18
+    Total combinational functions : 18
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 13
+Total pins : 10
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

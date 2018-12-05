@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Thunderbird_Turn_Signal
-Mon Dec 03 22:17:05 2018
+Tue Dec 04 22:22:21 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,15 +9,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,16 +43,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 03 22:17:05 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 04 22:22:21 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Thunderbird_Turn_Signal                     ;
 ; Top-level Entity Name              ; Thunderbird_Turn_Signal                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 9                                           ;
-;     Total combinational functions  ; 9                                           ;
+; Total logic elements               ; 18                                          ;
+;     Total combinational functions  ; 18                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 13                                          ;
+; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -146,23 +146,6 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+-------------------------+-------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                 ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
@@ -179,30 +162,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 9         ;
+; Estimated Total logic elements              ; 18        ;
 ;                                             ;           ;
-; Total combinational functions               ; 9         ;
+; Total combinational functions               ; 18        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2         ;
-;     -- 3 input functions                    ; 7         ;
+;     -- 4 input functions                    ; 4         ;
+;     -- 3 input functions                    ; 14        ;
 ;     -- <=2 input functions                  ; 0         ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 9         ;
+;     -- normal mode                          ; 18        ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
 ; Total registers                             ; 0         ;
 ;     -- Dedicated logic registers            ; 0         ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 13        ;
+; I/O pins                                    ; 10        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 6         ;
-; Total fan-out                               ; 48        ;
-; Average fan-out                             ; 1.37      ;
+; Maximum fan-out                             ; 12        ;
+; Total fan-out                               ; 74        ;
+; Average fan-out                             ; 1.95      ;
 +---------------------------------------------+-----------+
 
 
@@ -211,7 +194,7 @@ refer to the applicable agreement for further details.
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name             ; Library Name ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-------------------------+--------------+
-; |Thunderbird_Turn_Signal     ; 9 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |Thunderbird_Turn_Signal                                          ; Thunderbird_Turn_Signal ; work         ;
+; |Thunderbird_Turn_Signal     ; 18 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |Thunderbird_Turn_Signal                                          ; Thunderbird_Turn_Signal ; work         ;
 ;    |ped_flip_flop:ff_la|     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_la                      ; ped_flip_flop           ; work         ;
 ;       |gated_d_latch:latch1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_la|gated_d_latch:latch1 ; gated_d_latch           ; work         ;
 ;       |gated_d_latch:latch2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_la|gated_d_latch:latch2 ; gated_d_latch           ; work         ;
@@ -221,23 +204,38 @@ refer to the applicable agreement for further details.
 ;    |ped_flip_flop:ff_lc|     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_lc                      ; ped_flip_flop           ; work         ;
 ;       |gated_d_latch:latch1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_lc|gated_d_latch:latch1 ; gated_d_latch           ; work         ;
 ;       |gated_d_latch:latch2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_lc|gated_d_latch:latch2 ; gated_d_latch           ; work         ;
+;    |ped_flip_flop:ff_ra|     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_ra                      ; ped_flip_flop           ; work         ;
+;       |gated_d_latch:latch1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_ra|gated_d_latch:latch1 ; gated_d_latch           ; work         ;
+;       |gated_d_latch:latch2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_ra|gated_d_latch:latch2 ; gated_d_latch           ; work         ;
+;    |ped_flip_flop:ff_rb|     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_rb                      ; ped_flip_flop           ; work         ;
+;       |gated_d_latch:latch1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_rb|gated_d_latch:latch1 ; gated_d_latch           ; work         ;
+;       |gated_d_latch:latch2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_rb|gated_d_latch:latch2 ; gated_d_latch           ; work         ;
+;    |ped_flip_flop:ff_rc|     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_rc                      ; ped_flip_flop           ; work         ;
+;       |gated_d_latch:latch1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_rc|gated_d_latch:latch1 ; gated_d_latch           ; work         ;
+;       |gated_d_latch:latch2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Thunderbird_Turn_Signal|ped_flip_flop:ff_rc|gated_d_latch:latch2 ; gated_d_latch           ; work         ;
 +------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; ped_flip_flop:ff_la|gated_d_latch:latch2|Q         ; clk                 ; yes                    ;
-; ped_flip_flop:ff_lb|gated_d_latch:latch2|Q         ; clk                 ; yes                    ;
-; ped_flip_flop:ff_lc|gated_d_latch:latch2|Q         ; clk                 ; yes                    ;
-; ped_flip_flop:ff_la|gated_d_latch:latch1|Q         ; clk                 ; yes                    ;
-; ped_flip_flop:ff_lb|gated_d_latch:latch1|Q         ; clk                 ; yes                    ;
-; ped_flip_flop:ff_lc|gated_d_latch:latch1|Q         ; clk                 ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; ped_flip_flop:ff_la|gated_d_latch:latch2|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_lb|gated_d_latch:latch2|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_lc|gated_d_latch:latch2|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_ra|gated_d_latch:latch2|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_rb|gated_d_latch:latch2|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_rc|gated_d_latch:latch2|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_la|gated_d_latch:latch1|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_lb|gated_d_latch:latch1|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_lc|gated_d_latch:latch1|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_ra|gated_d_latch:latch1|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_rb|gated_d_latch:latch1|Q          ; clk                 ; yes                    ;
+; ped_flip_flop:ff_rc|gated_d_latch:latch1|Q          ; clk                 ; yes                    ;
+; Number of user-specified and inferred latches = 12  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -261,15 +259,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
-; cycloneiii_lcell_comb ; 10                          ;
-;     normal            ; 10                          ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 2                           ;
+; boundary_port         ; 10                          ;
+; cycloneiii_lcell_comb ; 18                          ;
+;     normal            ; 18                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.37                        ;
+; Average LUT depth     ; 1.46                        ;
 +-----------------------+-----------------------------+
 
 
@@ -288,10 +285,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 03 22:16:44 2018
+    Info: Processing started: Tue Dec 04 22:21:49 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Thunderbird_Turn_Signal -c Thunderbird_Turn_Signal
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20029): Only one processor detected - disabling parallel compilation
 Info (12021): Found 1 design units, including 1 entities, in source file ped_flip_flop.v
     Info (12023): Found entity 1: ped_flip_flop File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/ped_flip_flop.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file gated_d_latch.v
@@ -302,32 +299,37 @@ Info (12021): Found 1 design units, including 1 entities, in source file thunder
     Info (12023): Found entity 1: Thunderbird_Turn_Signal File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file tb.v
     Info (12023): Found entity 1: tb File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/tb.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at Thunderbird_Turn_Signal.v(16): created implicit net for "next_la" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Thunderbird_Turn_Signal.v(17): created implicit net for "next_lb" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at Thunderbird_Turn_Signal.v(18): created implicit net for "next_lc" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at Thunderbird_Turn_Signal.v(21): created implicit net for "next_ra" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at Thunderbird_Turn_Signal.v(22): created implicit net for "next_rb" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at Thunderbird_Turn_Signal.v(23): created implicit net for "next_rc" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 23
 Info (12127): Elaborating entity "Thunderbird_Turn_Signal" for the top level hierarchy
-Warning (10034): Output port "RA" at Thunderbird_Turn_Signal.v(12) has no driver File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 12
-Warning (10034): Output port "RB" at Thunderbird_Turn_Signal.v(12) has no driver File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 12
-Warning (10034): Output port "RC" at Thunderbird_Turn_Signal.v(12) has no driver File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 12
 Info (12128): Elaborating entity "ped_flip_flop" for hierarchy "ped_flip_flop:ff_la" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 16
 Info (12128): Elaborating entity "gated_d_latch" for hierarchy "ped_flip_flop:ff_la|gated_d_latch:latch1" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/ped_flip_flop.v Line: 14
 Warning (10240): Verilog HDL Always Construct warning at gated_d_latch.v(7): inferring latch(es) for variable "Q", which holds its previous value in one or more paths through the always construct File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/gated_d_latch.v Line: 7
 Info (10041): Inferred latch for "Q" at gated_d_latch.v(8) File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/gated_d_latch.v Line: 8
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "RA" is stuck at GND File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 12
-    Warning (13410): Pin "RB" is stuck at GND File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 12
-    Warning (13410): Pin "RC" is stuck at GND File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 12
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/output_files/Thunderbird_Turn_Signal.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "reset" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 10
-    Warning (15610): No output dependent on input pin "right" File: C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/Thunderbird_Turn_Signal.v Line: 11
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 9 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Mon Dec 03 22:17:05 2018
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 18 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Tue Dec 04 22:22:21 2018
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:30
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/output_files/Thunderbird_Turn_Signal.map.smsg.
 
 
