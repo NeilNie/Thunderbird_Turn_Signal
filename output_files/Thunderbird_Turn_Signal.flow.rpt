@@ -1,5 +1,5 @@
 Flow report for Thunderbird_Turn_Signal
-Tue Dec 04 22:22:55 2018
+Wed Dec 05 10:54:14 2018
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 04 22:22:54 2018       ;
+; Flow Status                        ; Successful - Wed Dec 05 10:54:14 2018       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Thunderbird_Turn_Signal                     ;
 ; Top-level Entity Name              ; Thunderbird_Turn_Signal                     ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 12/04/2018 22:21:50     ;
+; Start date & time ; 12/05/2018 10:52:40     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; Thunderbird_Turn_Signal ;
 +-------------------+-------------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 8796753388042.154398010902196          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 8796753388042.154402516004216          ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb             ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb                                     ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -102,12 +102,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:32     ; 1.0                     ; 4745 MB             ; 00:00:30                           ;
-; Fitter               ; 00:00:20     ; 1.0                     ; 5236 MB             ; 00:00:19                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4691 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4805 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4657 MB             ; 00:00:01                           ;
-; Total                ; 00:01:00     ; --                      ; --                  ; 00:00:56                           ;
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 4742 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:28     ; 1.0                     ; 5236 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4691 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4804 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
+; Total                ; 00:01:26     ; --                      ; --                  ; 00:00:54                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

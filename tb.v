@@ -22,35 +22,36 @@ module tb ();
 										 .la(la), .lb(lb), .lc(lc), 
 										 .ra(ra), .rb(rb), .rc(rc));
 	
-	always 
-		begin
-			clk=1; #5; clk=0; #5;
-		end
-	
 	initial
 		begin
-			$readmemb("thunderbird.tv", testvectors);
-			vectornum = 0; errors = 0; #20; reset = 0;
+			$readmemb("C:/Users/USER1/Digital Logic/Thunderbird_Turn_Signal/thunderbird.tv", testvectors);
+			clk = 0; 
+			vectornum = 0; 
+			errors = 0; 
+		end
+	
+	always 
+		begin
+			#5 clk = !clk;
 		end
 	
 	// apply test vectors at the rising edge of the clock. 
-	always @ (posedge clk)
+	always @ (negedge clk)
 		begin
 			#1; {left, right, expected} = testvectors[vectornum];
 		end
 	
-	always @ (negedge clk)
-		if (~reset) begin
-			if ({la, lb, lc, ra, rb, rc} != expected) begin
-				$display("Error: input = %b", {left, right});
-				$display("Outputs = %b %b %b %b %b %b (%b expected)", la, lb, lc, ra, rb, rc, expected);
-				errors = errors + 1;
-			end
-			vectornum = vectornum + 1;
-			if (testvectors[vectornum] == 8'bx) begin
-				$display("%d tests completed with %d errors", vectornum, errors);
-				$stop;
-			end
+	always @ (posedge clk) begin
+		if ({la, lb, lc, ra, rb, rc} != expected) begin
+			$display("Error: input = %b", {left, right});
+			$display("Outputs = %b %b %b %b %b %b (%b expected)", la, lb, lc, ra, rb, rc, expected);
+			errors = errors + 1;
+		end
+		vectornum = vectornum + 1;
+		if (vectornum == 20) begin
+			$display("%d tests completed with %d errors", vectornum, errors);
+			$stop;
+		end	
 	end
 	
 endmodule
